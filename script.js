@@ -41,7 +41,7 @@ const createTitle = (weather, city) => {
         case 'Clear':
         title = `Get your sunnies on. ${city} is looking rather great today.`
         break;
-        case 'Cloudy':
+        case 'Clouds':
         title = `Light a fire and get cosy. ${city} is looking grey today.`
         break;
         default:
