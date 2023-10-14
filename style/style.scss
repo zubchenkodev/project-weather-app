@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+// typography 
+h1 {
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+p, span {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.weather-app {
+    height: 100dvh;
+    padding-top: 49px;
+    padding-bottom: 40px;
+    background-color: #F7E9B9;
+    &__container {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        @media (min-width:600px) {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        @media (min-width:1025px) {
+            padding-left: 15%;
+            padding-right: 15%;
+            max-width: 1200px;
+        }
+    }
+    &__info {
+        margin-bottom: 60px;
+    }
+    &__icon {
+        margin-bottom: 18px;
+    }
+    &__title {
+        margin-bottom: 13px;
+    }
+    &__forecast {
+        &-line {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border-bottom: 1px dotted #707070;
+            &:last-of-type{
+                border-bottom: none;
+            }
+        }
+    }
+    
+}
